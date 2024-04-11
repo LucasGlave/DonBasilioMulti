@@ -5,7 +5,6 @@ import HeaderResponsive from "./HeaderResponsive";
 
 const Header = () => {
   const { innerWidth } = window
-  console.log(innerWidth)
   const sections = document.querySelectorAll("section"),
     navLinks = document.querySelectorAll("nav a");
   const resetLinks = () =>
@@ -74,7 +73,6 @@ const Header = () => {
       </motion.div>
       <div className="responsiveHeader">
         <HeaderResponsive />
-        {console.log(scrollY)}
       </div>
     </>
   );
