@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Header.scss";
 import OffcanvasExample from "./OffCanvas";
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import HeaderResponsive from "./HeaderResponsive";
 
 const Header = () => {
   const sections = document.querySelectorAll("section"),
@@ -66,9 +67,10 @@ const Header = () => {
             </a>
           </div>
         </div>
-      <OffcanvasExample />
-
       </motion.div>
+      <div className="responsiveHeader">
+        <HeaderResponsive />
+      </div>
     </>
   );
 };
