@@ -171,6 +171,13 @@ h2 {
     }
 }
 
+@media (max-width: 989px) {
+    #HOME{
+        display: flex;
+        align-items: flex-start;
+      }
+}
+
 @media (max-width: 768px) {
     .imgS {
         display: none;
