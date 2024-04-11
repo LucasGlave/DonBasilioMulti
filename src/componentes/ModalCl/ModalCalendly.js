@@ -12,7 +12,7 @@ const ModalCalendly = () => {
   return (
     <div className="modal-calendly">
       <button onClick={handleShow} className="verMas">
-        SACAR TURNO
+        SELECCIONAR
       </button>
       <Modal style={{background:'transparent'}} show={show} onHide={handleClose} onClick={handleClose} className="modalFlex" size="xl">
           <Modal.Body className="calendlyCard">
