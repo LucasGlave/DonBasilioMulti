@@ -34,7 +34,11 @@ const SacarTurno = () => {
               onMouseEnter={()=>handleMouseEnter(index)} onMouseLeave={()=>handleMouseLeave(null)}
             />
             <div onMouseEnter={()=>handleMouseEnter(index)} onMouseLeave={()=>handleMouseLeave(null)} className={`${isHovered === index ? 'infoHoverVisible'  : 'infoHoverHidden'}`}>
-              <h3>{peluquero.nombre}</h3>
+              <h3 className="hairdresserName">{peluquero.nombre}</h3>
+              <ModalCalendly url={peluquero.url} />
+            </div>
+            <div className="infoMobile">
+              <h3 className="hairdresserName">{peluquero.nombre}</h3>
               <ModalCalendly url={peluquero.url} />
             </div>
         </div>

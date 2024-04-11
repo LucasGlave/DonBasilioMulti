@@ -1,7 +1,9 @@
+
+
 export const peluqueros = [
     {
-      "nombre": "Juan Pérez",
-      "foto": "peluquero1.jpeg",
+      "nombre": "Fabricio Zangrando",
+      "foto": "fabri1.jpg",
       "url": "https://example.com/juanperez"
     },
     {
