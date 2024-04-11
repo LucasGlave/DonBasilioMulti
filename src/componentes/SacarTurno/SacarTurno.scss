@@ -1,4 +1,3 @@
-
 #SACARTURNO {
   height: 100vh;
   width: 100vw;
@@ -22,7 +21,7 @@
     filter: blur(0px);
     box-shadow: 0 -10px 20px rgb(0, 0, 0), 5px 10px 20px rgb(0, 0, 0);
   }
-  .cards{
+  .cards {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -31,7 +30,7 @@
     width: 100%;
     height: 100%;
     gap: 15px;
-    .cardHidden{
+    .cardHidden {
       display: flex;
       align-items: end;
       justify-content: flex-end;
@@ -42,7 +41,7 @@
       filter: blur(5px) grayscale(50%);
       transition: filter 0.5s ease-in-out;
     }
-    .cardVisible{
+    .cardVisible {
       display: flex;
       align-items: end;
       justify-content: flex-end;
@@ -53,7 +52,7 @@
       filter: blur(0);
       transition: filter 0.5s ease-in-out;
     }
-    h3 {
+    .hairdresserName {
       font-family: "Roboto", sans-serif;
     }
     .infoHoverHidden {
@@ -80,8 +79,11 @@
       border-radius: 15px;
       transition: opacity 0.5s ease-in-out;
     }
-    
-    img{
+    .infoMobile {
+      display: none;
+    }
+
+    img {
       position: absolute;
       z-index: 0;
       top: 0;
@@ -92,12 +94,11 @@
       border-radius: 15px;
       transition: all 0.3s ease-in-out;
     }
-    
   }
 }
 
 @media (max-width: 1095px) {
-  #SACARTURNO{
+  #SACARTURNO {
     padding: 0;
     margin: 0;
     display: flex;
@@ -109,8 +110,8 @@
     // }
   }
 }
-@media (max-width: 650px){
-  #SACARTURNO{
+@media (max-width: 650px) {
+  #SACARTURNO {
     background: transparent;
     padding: 0;
     margin: 0;
@@ -143,7 +144,7 @@
 }
 
 //cards responsive -> preguntar lucas
-@media(max-width: 900px){
+@media (max-width: 900px) {
   #SACARTURNO {
     height: 100vh;
     width: 100vw;
@@ -155,7 +156,7 @@
     justify-content: space-between;
     padding: 2rem;
     position: relative;
-    .cards{
+    .cards {
       position: relative;
       display: flex;
       flex-direction: column;
@@ -164,7 +165,7 @@
       width: 100%;
       height: 100%;
       gap: 15px;
-      .cardHidden{
+      .cardHidden {
         display: flex;
         align-items: end;
         justify-content: flex-end;
@@ -172,10 +173,10 @@
         border-radius: 15px;
         width: 90%;
         height: 30%;
-        filter: blur(5px) grayscale(50%);
-        transition: filter 0.5s ease-in-out;
+        // filter: blur(5px) grayscale(50%);
+        // transition: filter 0.5s ease-in-out;
       }
-      .cardVisible{
+      .cardVisible {
         display: flex;
         align-items: end;
         justify-content: flex-end;
@@ -183,38 +184,53 @@
         border-radius: 15px;
         width: 90%;
         height: 30%;
-        filter: blur(0);
-        transition: filter 0.5s ease-in-out;
+        // filter: blur(0);
+        // transition: filter 0.5s ease-in-out;
       }
       .infoHoverHidden {
-        opacity: 0;
-        z-index: 100;
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        background: linear-gradient(transparent, black);
-        padding: 10px;
-        border-radius: 15px;
-        transition: opacity 0.5s ease-in-out;
+        display: none;
       }
       .infoHoverVisible {
-        z-index: 100;
-        opacity: 1;
-        display: flex;
+        display: none;
+      }
+      .infoMobile {
         width: 100%;
-        flex-direction: column;
+        padding: 5px 15px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
         align-items: center;
-        background: linear-gradient(transparent, black);
-        padding: 10px;
-        border-radius: 15px;
-        transition: opacity 0.5s ease-in-out;
+        z-index: 100;
       }
     }
-}}
+  }
+}
 
-@media(max-width: 320px){
-  .textH2{
+//preguntar lucas
+@media (max-width: 660px) {
+  .hairdresserName {
+    font-size: 18px;
+    font-family: "Hermona", sans-serif;
+  }
+}
+
+//preguntar lucas
+@media (max-width: 400px) {
+  .hairdresserName {
+    font-size: 16px;
+    font-family: "Hermona", sans-serif;
+  }
+}
+
+//preguntar lucas
+@media (max-width: 420px) {
+  .hairdresserName {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .textH2 {
     font-size: 14px;
   }
 }
