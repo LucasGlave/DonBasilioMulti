@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./Header.scss";
-import OffcanvasExample from "./OffCanvas";
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import HeaderResponsive from "./HeaderResponsive";
 
 const Header = () => {
+  const { innerWidth } = window
+  console.log(innerWidth)
   const sections = document.querySelectorAll("section"),
     navLinks = document.querySelectorAll("nav a");
   const resetLinks = () =>
@@ -29,13 +30,16 @@ const Header = () => {
   const { scrollY } = useScroll()
   const [hidden, setHidden] = useState(false)
   useMotionValueEvent(scrollY, "change", (latest)=>{
-    const previous = scrollY.getPrevious()
-    if(latest > previous && latest > 150){
-      setHidden(true)
-    }else{
-      setHidden(false)
-    }
-  })
+      if(innerWidth >= 990){
+        const previous = scrollY.getPrevious()
+        if(latest > previous && latest > 150){
+          setHidden(true)
+        }else{
+          setHidden(false)
+        }
+      }
+    })
+  
   return (
     <>
       <motion.div
@@ -70,6 +74,7 @@ const Header = () => {
       </motion.div>
       <div className="responsiveHeader">
         <HeaderResponsive />
+        {console.log(scrollY)}
       </div>
     </>
   );
