@@ -166,22 +166,22 @@
       height: 100%;
       gap: 15px;
       .cardHidden {
-        display: flex;
-        align-items: end;
-        justify-content: flex-end;
-        border: none;
-        border-radius: 15px;
+        // display: flex;
+        // align-items: end;
+        // justify-content: flex-end;
+        // border: none;
+        // border-radius: 15px;
         width: 90%;
         height: 30%;
         // filter: blur(5px) grayscale(50%);
         // transition: filter 0.5s ease-in-out;
       }
       .cardVisible {
-        display: flex;
-        align-items: end;
-        justify-content: flex-end;
-        border: none;
-        border-radius: 15px;
+        // display: flex;
+        // align-items: end;
+        // justify-content: flex-end;
+        // border: none;
+        // border-radius: 15px;
         width: 90%;
         height: 30%;
         // filter: blur(0);
@@ -208,24 +208,43 @@
 
 //preguntar lucas
 @media (max-width: 660px) {
-  .hairdresserName {
-    font-size: 18px;
-    font-family: "Hermona", sans-serif;
+  #SACARTURNO {
+    .cards {
+      .infoMobile {
+        .hairdresserName {
+          padding-top: 5px;
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
 
 //preguntar lucas
 @media (max-width: 400px) {
-  .hairdresserName {
-    font-size: 16px;
-    font-family: "Hermona", sans-serif;
+  #SACARTURNO {
+    .cards {
+      .infoMobile {
+        .hairdresserName {
+          padding-top: 5px;
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
 
 //preguntar lucas
 @media (max-width: 420px) {
-  .hairdresserName {
-    font-size: 14px;
+  #SACARTURNO {
+    .cards {
+      .infoMobile {
+        .hairdresserName {
+          padding-top: 5px;
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
 
