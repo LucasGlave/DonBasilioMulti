@@ -4,16 +4,16 @@ export const peluqueros = [
     {
       "nombre": "Juan Perez",
       "foto": "peluquero1.jpeg",
-      "url": "https://example.com/juanperez"
+      "url": "https://calendly.com/septemdevstudios/sede-1-peluquero-1"
     },
     {
       "nombre": "Leandro García",
       "foto": "peluquero2.jpeg",
-      "url": "https://example.com/mariagarcia"
+      "url": "https://calendly.com/septemdevstudios/sede-1-peluquero-2"
     },
     {
       "nombre": "Pedro Sánchez",
       "foto": "peluquero3.jpeg",
-      "url": "https://example.com/pedrosanchez"
+      "url": "https://calendly.com/septemdevstudios/sede-1-peluquero-2"
     }
 ]
