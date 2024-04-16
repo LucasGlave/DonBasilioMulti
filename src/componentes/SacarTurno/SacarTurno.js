@@ -1,5 +1,5 @@
-import Reveal from "../Reveal";
 import "./SacarTurno.scss";
+import Reveal from "../Reveal";
 import ModalCalendly from '../ModalCl/ModalCalendly';
 import { peluqueros } from "./dataPeluqueros";
 import { useState } from "react";

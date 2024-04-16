@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="designedBy">
-          designed by <span>SeptemDev Studios</span>
+          designed by <span>SeptemDev Studio</span>
         </p>
       </div>
       <FooterResponsive />
