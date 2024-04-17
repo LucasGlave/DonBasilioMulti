@@ -97,36 +97,31 @@
   }
 }
 
-@media (max-width: 1095px) {
-  #SACARTURNO {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    // .textH2{
-    //   display: none;
-    // }
-  }
-}
-@media (max-width: 650px) {
-  #SACARTURNO {
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    // .imgBackground {
-    //   display: none;
-    // }
-    // .textH2{
-    //   display: none;
-    // }
-  }
-}
+// @media (max-width: 1096px) {
+//   #SACARTURNO {
+//     height: 100vh;
+//     width: 100vw;
+//     background: #614c3b;
+//     display: flex;
+//     flex-direction: column;
+//     color: white;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 2rem;
+//     position: relative;
+//   }
+// }
+// @media (max-width: 650px) {
+//   #SACARTURNO {
+//     background: transparent;
+//     padding: 0;
+//     margin: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+//   }
+// }
 
 //////////////////
 
@@ -166,26 +161,13 @@
       height: 100%;
       gap: 15px;
       .cardHidden {
-        // display: flex;
-        // align-items: end;
-        // justify-content: flex-end;
-        // border: none;
-        // border-radius: 15px;
         width: 90%;
-        height: 30%;
-        // filter: blur(5px) grayscale(50%);
-        // transition: filter 0.5s ease-in-out;
+        height: 25vh;
+        filter: blur(0px) grayscale(0%);
       }
       .cardVisible {
-        // display: flex;
-        // align-items: end;
-        // justify-content: flex-end;
-        // border: none;
-        // border-radius: 15px;
         width: 90%;
-        height: 30%;
-        // filter: blur(0);
-        // transition: filter 0.5s ease-in-out;
+        height: 25vh;
       }
       .infoHoverHidden {
         display: none;
@@ -201,6 +183,9 @@
         gap: 10px;
         align-items: center;
         z-index: 100;
+        .hairdresserName{
+          padding-top: 5px;
+        }
       }
     }
   }
