@@ -1,6 +1,6 @@
 import "./SacarTurno.scss";
 import Reveal from "../Reveal";
-import ModalCalendly from '../ModalCl/ModalCalendly';
+import ModalCalendly from "../ModalCl/ModalCalendly";
 import { peluqueros } from "./dataPeluqueros";
 import { useState } from "react";
 
@@ -17,35 +17,67 @@ const SacarTurno = () => {
 
   return (
     <section id="SACARTURNO">
-      <img src='./BackgroundRustic.jpg' alt='imgS'className='imgBackground'/>
+      <img src="./BackgroundRustic.jpg" alt="imgS" className="imgBackground" />
       <div className="textH2">
-        <Reveal >
+        <Reveal>
           <h2>- SACAR TURNO -</h2>
         </Reveal>
       </div>
       <div className="cards">
-        {peluqueros.map((peluquero, index)=> (
+        {peluqueros.map((peluquero, index) => (
           // <div onMouseEnter={() => handleCardSelect(index)} onMouseLeave={() => handleCardSelect(null)} className={`${cardSelect === null ? 'cardVisible' : cardSelect === index ? 'cardVisible' : 'cardHidden'}`} key={index}>
-          <div className={`${isHovered === null ? 'cardVisible' : isHovered === index ? 'cardVisible' : 'cardHidden'}`} key={index}>
+          <div
+            className={`${
+              isHovered === null
+                ? "cardVisible"
+                : isHovered === index
+                ? "cardVisible"
+                : "cardHidden"
+            }`}
+            key={index}
+          >
             <img
               src={peluquero.foto}
               alt={peluquero.nombre}
               className="imgBackCard"
-              onMouseEnter={()=>handleMouseEnter(index)} onMouseLeave={()=>handleMouseLeave(null)}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(null)}
             />
-            <div onMouseEnter={()=>handleMouseEnter(index)} onMouseLeave={()=>handleMouseLeave(null)} className={`${isHovered === index ? 'infoHoverVisible'  : 'infoHoverHidden'}`}>
+            <div
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(null)}
+              className={`${
+                isHovered === index ? "infoHoverVisible" : "infoHoverHidden"
+              }`}
+            >
               <h3 className="hairdresserName">{peluquero.nombre}</h3>
               <ModalCalendly url={peluquero.url} />
             </div>
+            {/* <div className="infoMobile">
+              <h3 className="hairdresserName">{peluquero.nombre}</h3>
+              <ModalCalendly url={peluquero.url} />
+            </div> */}
+          </div>
+        ))}
+      </div>
+
+      <div className="cardsMobile">
+        {peluqueros.map((peluqueroMobile, index)=> (
+          <div className="mobileCard" key={index}>
+            <img
+              src={peluqueroMobile.foto}
+              alt={peluqueroMobile.nombre}
+              className="imgBackCard"
+            />
             <div className="infoMobile">
-              <h3 className="hairdresserName">{peluquero.nombre}</h3>
-              <ModalCalendly url={peluquero.url} />
+              <h3 className="hairdresserName">{peluqueroMobile.nombre}</h3>
+              <ModalCalendly url={peluqueroMobile.url} />
             </div>
-        </div>
+          </div>
         ))}
       </div>
     </section>
   );
 };
- 
+
 export default SacarTurno;
