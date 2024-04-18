@@ -41,7 +41,9 @@ const ModalCalendly = ({url}) => {
           VOLVER
         </button>
         <button onClick={handleClose} className="buttonInicio">
-          INICIO
+          <span>
+            INICIO
+          </span>
         </button>
       </Modal>
     </div>
