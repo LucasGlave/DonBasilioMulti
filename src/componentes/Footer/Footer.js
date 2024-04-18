@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="designedBy">
-          designed by <span>SeptemDev Studio</span>
+          designed by <a href="https://www.linkedin.com/company/septemdev-studio/?viewAsMember=true"><span>SeptemDev Studio</span></a>
         </p>
       </div>
       <FooterResponsive />

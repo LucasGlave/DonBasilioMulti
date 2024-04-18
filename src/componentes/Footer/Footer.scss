@@ -11,8 +11,11 @@
     text-align: center;
     padding: 1rem;
     background: (#0000001f);
-    span {
-      color: white;
+    a {
+      text-decoration: none;
+      span {
+        color: white;
+      }
     }
   }
   .footer-desktop {
