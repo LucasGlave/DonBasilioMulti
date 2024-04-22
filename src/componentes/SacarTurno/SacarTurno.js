@@ -65,7 +65,7 @@ const SacarTurno = () => {
         {peluqueros.map((peluqueroMobile, index)=> (
           <div className="mobileCard" key={index}>
             <img
-              src={peluqueroMobile.foto}
+              src={peluqueroMobile.fotoHorizontal}
               alt={peluqueroMobile.nombre}
               className="imgBackCard"
             />
